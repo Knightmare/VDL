@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @checkout.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @checkout.last_name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @checkout.address %>
+</p>
+
+<p>
+  <b>Phone num:</b>
+  <%= @checkout.phone_num %>
+</p>
+
+
+<%= link_to 'Edit', edit_checkout_path(@checkout) %> |
+<%= link_to 'Back', checkouts_path %>

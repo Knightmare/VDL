@@ -1,0 +1,31 @@
+
+
+<h1>Listing checkouts</h1>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Address</th>
+    <th>Phone num</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @checkouts.each do |checkout| %>
+  <tr>
+    <td><%= checkout.first_name %></td>
+    <td><%= checkout.last_name %></td>
+    <td><%= checkout.address %></td>
+    <td><%= checkout.phone_num %></td>
+    <td><%= link_to 'Show', checkout %></td>
+    <td><%= link_to 'Edit', edit_checkout_path(checkout) %></td>
+    <td><%= button_to 'Destroy', checkout, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

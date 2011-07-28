@@ -1,0 +1,77 @@
+@charset "utf-8";
+/*
+Name of Template : Surreal
+Author : Roshan
+URL : www.ramblingsoul.com
+License : Creative Commons Attribution-Noncommercial-Share Alike 3.0 License.
+Note : Do not remove the credit links from the template
+*/
+
+* {	margin: 0px; padding: 0px;}
+body {background:url(/images/bg.jpg) repeat; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#666666;}
+.clear {clear:both;}
+#wrap {background:url(/images/wrapbg.jpg) repeat-y; width:927px; margin:25px auto 25px auto;}
+#wrap #header #sitename {color: #ffffff; font-family: Georgia, "Times New Roman", Times, serif; font-size: 58px; font-weight: normal;	display: block;	padding-top: 140px;	text-align: right; padding-right: 50px;}
+#sitename a, #sitename a:visited, #sitename a:active{color:#ffffff; text-decoration:none;}
+#sitename a:hover{color:#ffffcc; text-decoration:none;}
+#header {background:url(/images/header.jpg) no-repeat; height:341px;}
+
+#page {padding:0px 10px 0px 10px;}
+#page #menu {float:left; background:url(/images/sidemenu.jpg) no-repeat; width:269px; height:382px;}
+#page #content {margin:0px 0px 0px 275px; padding:0px 20px 0px 5px;}
+#content p {line-height:22px; margin:0px 0px 25px 0px;}
+#content h2 {font-family:Georgia, "Times New Roman", Times, serif; font-weight:normal; font-size:26px; color:#666600; display:block; margin-bottom:20px;}
+
+#content a {color:#999900;}
+#content a:visited {color:#666666;}
+#content a:active { color:#99CC00;}
+#content a:hover {color:#000000; text-decoration:none;}
+#content h2 .seo {display:block; text-align:right; font-size:10px; color:#999999; background:#efefef; padding:3px;}
+#content blockquote {display:block; padding:5px; margin:10px; text-align:center; font-family:Georgia, "Times New Roman", Times, serif; color:#996600; background:#F8FDBA; border-top:dashed 1px #666666; border-bottom:dashed 1px #666666;}
+#content blockquote p {margin:0px;}
+#content blockquote cite {color:#000000; display:block; text-align:right; padding:5px; border-top:solid 1px  #F3ECBE;}
+#content img {background:#efefef; margin:5px; padding:5px; border:solid 1px #999999;}
+#content .alignleft {float:left;}
+#content .alignright {float:right;}
+#content .postmetadata {display:block; padding:3px; background: #E3EDAF;}
+#content h1,#content h3,#content h4,#content h5,#content h6 {color:#666600;}
+#content ul {list-style:square;  padding:5px; margin:10px 10px 10px 20px;}
+#content li {padding:5px; margin-bottom:10px;}
+#content ol {padding:5px; margin:10px 10px 10px 20px;}
+
+#browse { background:url(/images/postbottombg.jpg) no-repeat; padding:40px 5px 10px 5px;}
+#browse .subhead{font-family:Georgia, "Times New Roman", Times, serif; font-weight:normal; padding-left:25px; font-size:26px; color:#666600; display:block; margin-bottom:35px;}
+#browse .categoryhead {font-family:Georgia, "Times New Roman", Times, serif; font-weight:normal; padding:5px; font-size:22px; color:#666600; display:block; border-bottom:solid 1px #ffffff;}
+#browse ul {list-style:none;}
+#browse li {display:block; height:25px; border-top:solid 1px #FEFEFC; border-top: solid 1px #EBE6B4;}
+#browse ul a {display:block; height:20px; padding:5px 5px 0px 5px; text-decoration:none; color:#000000;}
+#browse a:visited,active{display:block; height:20px; padding:5px 5px 0px 5px; text-decoration:none; color:#000000;border-bottom:solid 1px #D7C479;}
+#browse a:hover {background:#ffffff; color:#000000;}
+
+.browsecat {float:left; width:30%; padding:5px 6px 8px 6px; margin-left:10px; border:solid 1px #F3ECBE; background:#FBFAF0;}
+
+#menu h2 {display:block; color:#666600; border-bottom:solid 1px #DFCD95; padding:5px; font-family:Georgia, "Times New Roman", Times, serif; font-size:22px; font-weight:normal;}
+#wrap #page #menu #sidemenu { padding: 65px 45px 0px 40px;	display: block;}
+#sidemenu ul { display:block;list-style:none;}
+#sidemenu li {display:block; height:26px; border-top:solid 1px #FFFFff;}
+#sidemenu a, #sidemenu a:visited, #sidemenu a:active {display:block; height:20px; padding:5px 5px 0px 5px; color:#666666; text-decoration:none; border-bottom:solid 1px #DFCD95;}
+#sidemenu a:hover{background:#ffffcc;}
+#sidemenu .active a,#sidemenu .active a:visited, #sidemenu .active a:active, #sidemenu .active a:hover {background:#ffffcc;}
+
+#footer {background:url(/images/footer.jpg) no-repeat; background-position:bottom; height:100px; text-align:center;}
+#footercontent {margin:15px; border-top:solid 1px #EBE6B4; padding-top:15px;}
+#footer a, #footer a:visited, #footer a:active {color:#996633; text-decoration:none;}
+#footer #credit {font-size:10px;}
+
+
+.textfield {display: block; float:left; width:65%; background-color: #F3F4E8; margin:3px 3px 3px 30px; padding:3px;	border: 1px solid #D6D9AE; clear:right;}
+label {	display: block; float:left; text-align:right; font-weight:bold; width:20%; margin:3px; padding: 5px;}
+.button {display: block; padding:0px; background-color:#E3E6C8; margin:3px;	border: 2px solid #efefef; color:#000000;}
+.textfield:hover {background:#FBFCF8;}
+.textfield:focus {background:#ffffff;}
+#content .clear2 {clear:right; width:90%;}
+.hide {display:none;}
+
+#content table {margin:10px; width:500px; border:solid 1px #BDDB99;}
+#content th {background:#DFEDCD; padding:5px 15px 5px 15px; color:#999933; font-weight:bold; text-align:center; border-bottom:1px solid #BDDB99;}
+#content td {border-bottom:1px solid #DFEDCD ; padding:5px 15px 5px 15px; border-right:1px solid #DFEDCD;}

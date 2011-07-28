@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>iBuy</title>
+<link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+  <%= javascript_include_tag :all %>  
+  <%= yield(:head) %>
+</head>
+
+<body>
+<div id="wrap">
+<div id="header">
+<h1 id="sitename"><a href="#">iBuy</a></h1>
+</div>
+<div id="page">
+<div id="menu">
+<div id="sidemenu">
+<h2>Menu</h2>
+<ul>
+<li><%=link_to 'Store', '/', :class => is_active?("index")%></li>
+<li><%=link_to 'Tutorial', '/cart/tutorial', :class => is_active?("tutorial")%></li>
+<li><%=link_to 'Cart', '/cart'%></li>
+<li><%=link_to 'Checkout', checkouts_path %></li>
+</ul>
+</div>
+</div>
+<div id="content">
+
+<%= yield %>
+
+</div>
+<div class="clear"></div>
+<div id="browse">
+<br>
+<div id="footer">
+<div id="footercontent">
+<p>iBuy.net &copy; All Rights Reserved</p>
+<p id="credit"><a href="http://ramblingsoul.com">CSS Template</a> by Ramblingsoul</p>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

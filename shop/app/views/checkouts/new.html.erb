@@ -1,0 +1,14 @@
+<h1>Checkout</h1>
+<% item = Product.find_by_id(id) %>
+<tr>
+    <td>
+        <div class="image">
+            <%= link_to (image_tag item.photo.url(:small)), item %>
+        </div>
+    </td>
+    <td class="title"><%= link_to item.name, item %></td>
+    <td class="price"><%= number_to_currency(item.price) %></td>
+</tr>
+<%= render 'form' %>
+
+<%= link_to 'Back', checkouts_path %>

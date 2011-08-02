@@ -1,6 +1,11 @@
 Shop::Application.routes.draw do
   
-  resources :checkouts
+  resources :checkouts do
+    collection do
+      get 'add'
+    end
+  end
+  
 
   resources :products
   

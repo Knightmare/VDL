@@ -3,7 +3,7 @@ class CheckoutsController < ApplicationController
   # GET /checkouts.xml
   def index
     @checkouts = Checkout.all(session[:checkout])
-
+    #@product = Product.find(params[:id])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @checkouts }
@@ -25,7 +25,8 @@ class CheckoutsController < ApplicationController
   # GET /checkouts/new.xml
   def new
     @checkout = Checkout.new(session[:checkout])
-    id = session[:product]
+    @product = Product.find(params[:id])
+    session[:product] = @product
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @checkout }
@@ -69,11 +70,7 @@ class CheckoutsController < ApplicationController
     end
   end
 
-def add
-  session[:product] = id
-  redirect_to :action => :new
-  
-end
+
   # DELETE /checkouts/1
   # DELETE /checkouts/1.xml
   def destroy

@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.9'
 gem 'paperclip', :git => 'http://github.com/thoughtbot/paperclip.git'
 gem 'rack-webconsole'
+gem 'ace-rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

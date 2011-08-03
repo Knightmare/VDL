@@ -11,6 +11,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     abstract (1.0.0)
+    ace-rails (0.0.2)
     actionmailer (3.0.9)
       actionpack (= 3.0.9)
       mail (~> 2.2.19)
@@ -85,6 +86,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ace-rails
   paperclip!
   rack-webconsole
   rails (= 3.0.9)

@@ -1,4 +1,8 @@
 class Product < ActiveRecord::Base
+  validates :price, :numericality => true, :length => { :minimum => 3 }
+  validates :name, :length => { :minimum => 2 }
+  
+  
   # Paperclip
     has_attached_file :photo,
       :styles => {

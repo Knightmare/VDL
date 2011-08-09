@@ -1,12 +1,5 @@
 <h1>Checkout</h1>
-<h3> <%= @product.name %> </h3>
 
-<%= image_tag @product.photo.url(:medium) %>
-
-<p>
-  <b>Price:</b>
-  $<%= @product.price %>
-</p>
 <%= render 'form' %>
 
 <%= link_to 'Back', checkouts_path %>

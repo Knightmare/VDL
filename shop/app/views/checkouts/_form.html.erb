@@ -1,3 +1,5 @@
+
+
 <%= form_for(@checkout) do |f| %>
   <% if @checkout.errors.any? %>
     <div id="error_explanation">
@@ -10,9 +12,20 @@
       </ul>
     </div>
   <% end %>
+<h3> <%= @product.name %> </h3>
+
+<%= image_tag @product.photo.url(:medium) %>
+
+<p>
+  <b>Price:</b>
+  $<%= @product.price %>
+</p>
 
 <p>Please fill out the information below for shipping</p>
   <div class="field">
+	<%= f.hidden_field :name, :value => @product.name%>
+	<%= f.hidden_field :price, :value => @product.price%>
+	
     <%= f.label :first_name %><br />
     <%= f.text_field :first_name %>
   </div>
@@ -29,6 +42,6 @@
     <%= f.text_field :phone_num %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :value => "Checkout" %>
   </div>
 <% end %>

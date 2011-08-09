@@ -14,7 +14,7 @@ class CheckoutsController < ApplicationController
   # GET /checkouts/1.xml
   def show
     @checkout = Checkout.find(params[:id])
-
+    @product = Product.find(session[:product])
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @checkout }
@@ -36,13 +36,14 @@ class CheckoutsController < ApplicationController
   # GET /checkouts/1/edit
   def edit
     @checkout = Checkout.find(params[:id])
+    @product = Product.find(session[:product])
   end
 
   # POST /checkouts
   # POST /checkouts.xml
   def create
     @checkout = Checkout.new(params[:checkout])
-
+    @product = Product.find(session[:product])
     respond_to do |format|
       if @checkout.save
         format.html { redirect_to(@checkout, :notice => 'Checkout was successfully.') }

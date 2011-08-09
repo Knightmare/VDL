@@ -1,5 +1,13 @@
 <p id="notice"><%= notice %></p>
 
+<h3> <%= @checkout.name %> </h3>
+
+<%= image_tag @product.photo.url(:medium) %>
+
+<p>
+  <b>Price:</b>
+  $<%= @checkout.price %>
+</p>
 <p>
   <b>First name:</b>
   <%= @checkout.first_name %>

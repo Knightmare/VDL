@@ -30,7 +30,8 @@
 
 <%= yield %>
 
-<%= ace_editor :mode => :ruby, :theme => :clouds_midnight, :content => :all %>
+
+<%= ace_editor :mode => :ruby, :theme => :cobalt, :content => yield(:content) %>
 
 </div>
 <div class="clear"></div>
